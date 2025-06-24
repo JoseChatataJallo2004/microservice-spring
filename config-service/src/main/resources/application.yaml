@@ -1,0 +1,16 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+  #defaul label es la rama donde se va guardar en el git
+          default-label: config-server
+          uri: https://github.com/JoseChatataJallo2004/microservice-spring
+          ##carpeta donde se va guardar es el config-data
+          search-paths: config-data
+
+application:
+  name: config-service
