@@ -19,3 +19,14 @@ server:
 servicio:
   carro:
     url: http://localhost:8002
+
+eureka:
+  client:
+    # colocamos true porque es un cliente
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+
+  instance:
+    hostname: localhost
