@@ -3584,3 +3584,18 @@ java.lang.NullPointerException
 	at org.springsource.ide.eclipse.commons.livexp.core.LiveVariable.setValue(LiveVariable.java:46)
 	at org.springframework.ide.eclipse.boot.dash.util.AbstractPollingAppReadyStateMonitor$1.run(AbstractPollingAppReadyStateMonitor.java:51)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-06-24 18:06:46.346
+!MESSAGE Classpath changed for project: gateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-06-24 18:06:46.346
+!MESSAGE Boot project ADDED: gateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-06-24 18:06:48.135
+!MESSAGE Classpath changed for project: gateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-06-24 18:06:48.618
+!MESSAGE Classpath changed for project: gateway-service
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-06-24 18:07:07.331
+!MESSAGE Classpath changed for project: gateway-service
