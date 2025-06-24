@@ -1,0 +1,5 @@
+package com.usuario_service.repositorio;
+
+public interface UsuarioRepository {
+
+}

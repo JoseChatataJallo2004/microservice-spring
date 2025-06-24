@@ -1,0 +1,5 @@
+package com.usuario_service.modelos;
+
+public class Moto {
+
+}
