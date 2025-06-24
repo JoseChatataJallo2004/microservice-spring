@@ -16,16 +16,16 @@ spring:
         dialect: org.hibernate.dialect.MySQL8Dialect
 
 server:
-  port: 8002
+  port: ${PORT:${SERVER_PORT:0}}
 
 eureka:
   client:
     # colocamos true porque es un cliente
-    fetch-registry: true
-    register-with-eureka: true
+    fetch-registry: true                     # 🔄 Descarga el registro de Eureka
+    register-with-eureka: true               # ✅ Se registra como cliente Eureka
     service-url:
-      default-zone: http://localhost:8761/eureka
+      default-zone: http://localhost:8761/eureka  # 🌐 Dirección del Eureka Server
 
   instance:
-    hostname: localhost
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}  # 🆔 Identificador único por instancia
 
