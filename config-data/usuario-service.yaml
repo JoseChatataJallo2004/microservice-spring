@@ -30,4 +30,5 @@ eureka:
   instance:  # ✅ debe ir al mismo nivel que "client"
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     prefer-ip-address: true
-    hostname: localhost
+    ip-address: 127.0.0.1
+    #hostname: localhost
