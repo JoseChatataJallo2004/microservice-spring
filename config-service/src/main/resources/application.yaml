@@ -12,5 +12,5 @@ spring:
           ##carpeta donde se va guardar es el config-data
           search-paths: config-data
 
-application:
-  name: config-service
+  application:
+    name: config-service

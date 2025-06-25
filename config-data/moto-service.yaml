@@ -20,13 +20,9 @@ server:
 
 eureka:
   client:
-    # colocamos true porque es un cliente
-    fetch-registry: true                     # 🔄 Descarga el registro de Eureka
-    register-with-eureka: true               # ✅ Se registra como cliente Eureka
+    fetch-registry: true
+    register-with-eureka: true
     service-url:
-      default-zone: http://localhost:8761/eureka  # 🌐 Dirección del Eureka Server
-
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}  # 🆔 Identificador único por instancia
-
-
+      default-zone: http://localhost:8761/eureka
+    instance:
+      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
